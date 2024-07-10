@@ -1,0 +1,13 @@
+prefix=D:/msys64/usr/local
+exec_prefix=D:/msys64/usr/local
+libdir=D:/msys64/usr/local/lib
+includedir=D:/msys64/usr/local/include
+
+Name: libtesseract
+Description: An OCR Engine that was developed at HP Labs between 1985 and 1995... and now at Google.
+URL: https://github.com/tesseract-ocr/tesseract
+Version: 5.4.1
+Requires.private: lept
+Libs: -L${libdir} -ltesseract54   
+Libs.private:
+Cflags: -I${includedir}
